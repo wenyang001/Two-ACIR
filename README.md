@@ -7,7 +7,7 @@ In CVPR'2023
 
 ## Overall   
 ### Motivation
-![Alt text](./Figures/Diff.png)  
+![Alt text](https://github.com/wenyang001/Two-ACIR/blob/main/Figures/Diff.png)  
 Our work considers a real-world JPEG image restoration problem with bit errors on the encrypted bitstream, where $`En/De`$ represent 
 JPEG encoding/decoding and $`E_ /D_K`$ represent encryption/decryption employed in disks with the secret key $`K`$. Existing image restoration methods are mainly designed for pre-deﬁned degradation models in the pixel domain, and thus cannot be directly applied to the bitstream domain corruption.
 In this paper, we propose a two-stage compensation and alignment scheme for this real-world problem.
