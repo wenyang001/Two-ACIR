@@ -57,4 +57,16 @@ python train.py --name Cityscape512 --resize_or_crop scale_width --scen 1 --data
 The results in test phase will be saved in the folder `Pix2PixHD_modify/results/`  
 
 ## Acknowledgement
-Some code are borrowed from [[EPDN](https://github.com/ErinChen1/EPDN)] and [[Pix2PixHD](https://github.com/NVIDIA/pix2pixHD)]
+Some code is borrowed from [[EPDN](https://github.com/ErinChen1/EPDN)] and [[Pix2PixHD](https://github.com/NVIDIA/pix2pixHD)]
+
+## Citing Our Work
+```
+@InProceedings{Liu_2023_CVPR,
+    author    = {Liu, Wenyang and Wang, Yi and Yap, Kim-Hui and Chau, Lap-Pui},
+    title     = {Bitstream-Corrupted JPEG Images Are Restorable: Two-Stage Compensation and Alignment Framework for Image Restoration},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2023},
+    pages     = {9979-9988}
+}
+```
