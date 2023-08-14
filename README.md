@@ -1,13 +1,13 @@
 # Two-ACIR
-This is a pytorch implementation of the following paper
+This is a pytorch implementation of the following paper:
 
-Bitstream-Corrupted JPEG Images are Restorable: Two-stage Compensation and Alignment Framework for Image Restoration. [[paper](https://openaccess.thecvf.com/content/CVPR2023/papers/Liu_Bitstream-Corrupted_JPEG_Images_Are_Restorable_Two-Stage_Compensation_and_Alignment_Framework_CVPR_2023_paper.pdf)][[arxiv](https://arxiv.org/abs/2304.06976)]
+Bitstream-Corrupted JPEG Images are Restorable: Two-stage Compensation and Alignment Framework for Image Restoration. [[paper](https://openaccess.thecvf.com/content/CVPR2023/papers/Liu_Bitstream-Corrupted_JPEG_Images_Are_Restorable_Two-Stage_Compensation_and_Alignment_Framework_CVPR_2023_paper.pdf)][[arxiv](https://arxiv.org/abs/2304.06976)]  
 ***Wenyang Liu, Yi Wang, Kim-Hui Yap and Lap-Pui Chau***  
 In CVPR'2023
 
 ## Overall   
 ### Motivation
-![Alt text](Figures/Problem.png)
+![Alt text](Figures/motivation.png)
 Our work considers a real-world JPEG image restoration problem with bit errors on the encrypted bitstream, where $`En/De`$ represent 
 JPEG encoding/decoding and $`E_ /D_K`$ represent encryption/decryption employed in disks with the secret key $`K`$. Existing image restoration methods are mainly designed for pre-deﬁned degradation models in the pixel domain, and thus cannot be directly applied to the bitstream domain corruption.
 In this paper, we propose a two-stage compensation and alignment scheme for this real-world problem.
