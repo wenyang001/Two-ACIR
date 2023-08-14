@@ -7,13 +7,13 @@ In CVPR'2023
 
 ## Overall   
 ### Motivation
-![Alt text](./Figures/motivation.png)
+![Alt text](./Figures/Diff.png)  
 Our work considers a real-world JPEG image restoration problem with bit errors on the encrypted bitstream, where $`En/De`$ represent 
 JPEG encoding/decoding and $`E_ /D_K`$ represent encryption/decryption employed in disks with the secret key $`K`$. Existing image restoration methods are mainly designed for pre-deﬁned degradation models in the pixel domain, and thus cannot be directly applied to the bitstream domain corruption.
 In this paper, we propose a two-stage compensation and alignment scheme for this real-world problem.
 
 ### Framework
-![Alt text](./Figures/Overall.png)
+![Alt text](./Figures/Overall.png)  
 Overall structure of our method with a robust decoder, followed by a two-stage alignment and compensation framework. The input is the JPEG 
 corrupted encrypted bitstream. After the decryption, the JPEG corrupted decrypted bitstream is sent to the JPEG robust decoder to be fully decoded and to 
 extract the thumbnail. In the ﬁrst stage, SCA can adaptively perform block-wise image color compensation and alignment based on the estimated color and 
@@ -21,17 +21,17 @@ block offsets. In the second stage, GCA leverages the extracted low-resolution t
 reﬁne-guided Laplacian pyramid fusion network to guide full-resolution pixel-wise image restoration in a coarse-to-ﬁne manner.
 
 ### Result on Cityscape dataset
-![Alt text](./Figures/Result.png)
+![Alt text](./Figures/Result.png)  
 
 ### Quantitative results on Cityscape dataset
-![Alt text](./Figures/Qualitative_results.png)
+![Alt text](./Figures/Qualitative_results.png)  
 
 ### Our Poster
 ![Alt text](./Figures/poster.png)
 
 ## Get Started
 ### Dataset construction
-To generate the corrupted encrypted/decrypted bitstream
+To generate the corrupted encrypted/decrypted bitstream  
 ```bash
 # BER is set to $`10^-5`$
 python error_injection.py
@@ -42,10 +42,10 @@ To decode our corrupted encrypted/decrypted bitstream with our robust decoder to
 ```bash
 python alignment.py
 ```
-The recovered images are saved in the folder `/Input/` and `/Input_S/`
+The recovered images are saved in the folder `/Input/` and `/Input_S/`  
 
 ### Stage 2
-To further recover the images with our network to achieve pixel-level compensation and alignment framework
+To further recover the images with our network to achieve pixel-level compensation and alignment framework  
 ```bash
 # scene: 1 means 512x256, 2 means 1024x512
 python test --name Cityscape512 --resize_or_crop scale_width --scen 1 --dataroot ../Datasets/test512 --gpu_ids 1 --which_epoch 200
@@ -54,7 +54,7 @@ python test --name Cityscape1K --resize_or_crop scale_width --scen 2 --dataroot 
 # training
 python train.py --name Cityscape512 --resize_or_crop scale_width --scen 1 --dataroot ../Datasets/train512 --gpu_ids 1
 ```
-The results in test phase will be saved in the folder `Pix2PixHD_modify/results/`
+The results in test phase will be saved in the folder `Pix2PixHD_modify/results/`  
 
 ## Acknowledgement
 Some code are borrowed from [[EPDN](https://github.com/ErinChen1/EPDN)] and [[Pix2PixHD](https://github.com/NVIDIA/pix2pixHD)]
