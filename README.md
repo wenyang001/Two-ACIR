@@ -27,7 +27,10 @@ reﬁne-guided Laplacian pyramid fusion network to guide full-resolution pixel-w
 
 
 ### Quantitative results on Cityscape dataset
-![Alt text](./Figures/Qualitative_results.png)  
+<p align="center">
+    <img src="./Figures/Qualitative_results" alt="Qualitative_results" width="80%">
+</p>
+
 
 ### Our Poster
 ![Alt text](./Figures/poster.png)
