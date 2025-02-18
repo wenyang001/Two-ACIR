@@ -21,10 +21,13 @@ block offsets. In the second stage, GCA leverages the extracted low-resolution t
 reﬁne-guided Laplacian pyramid fusion network to guide full-resolution pixel-wise image restoration in a coarse-to-ﬁne manner.
 
 ### Result on Cityscape dataset
-![Alt text](./Figures/Result.png)  
+<p align="center">
+    <img src="./Figures/Result.png" alt="Result" width="60%">
+</p>
+
 
 ### Quantitative results on Cityscape dataset
-<img src="./Figures/Qualitative_results.png" alt="Qualitative results" width="60%">
+![Alt text](./Figures/Qualitative_results.png)  
 
 ### Our Poster
 ![Alt text](./Figures/poster.png)
