@@ -40,7 +40,7 @@ python error_injection.py
 ### Stage 1
 To decode our corrupted encrypted/decrypted bitstream with our robust decoder to achieve block-level alignment and compensation  
 ```bash
-python alignment.py
+python decoder.py
 ```
 The recovered images are saved in the folder `/Input/` and `/Input_S/`  
 
